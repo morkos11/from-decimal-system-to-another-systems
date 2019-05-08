@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the number");
+            int s = int.Parse(Console.ReadLine());
+            string a = Convert.ToString(s, 2);
+            string b = Convert.ToString(s, 8);
+            string c = Convert.ToString(s, 16);
+            Console.WriteLine("the number in binary :\n {0}\n ", a);
+            Console.WriteLine("the number in octal :\n {0}\n", b);
+            Console.WriteLine("the number in hexadecimal :\n {0}\n", c);            
+            Console.ReadKey();
+        }
+    }
+}
